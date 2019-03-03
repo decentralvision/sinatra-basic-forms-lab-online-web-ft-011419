@@ -8,6 +8,7 @@ class App < Sinatra::Base
     erb :create_puppy
   end
   post '/puppy' do
+    @params = params
     erb :display_puppy
   end
 end
